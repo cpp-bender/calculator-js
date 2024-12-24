@@ -16,39 +16,37 @@
   </head>
   <body>
     <section id="app" class="text-center rounded-4 mx-auto">
-      <div
-        class="container my-4 d-flex flex-column"
-      >
+      <div class="container my-4 d-flex flex-column">
         <div id="display" class="text-end my-3 align-self-end">
+          <h1 id="oldres" class="text-secondary"></h1>
           <h1 class="text-white">0</h1>
         </div>
         <hr style="color: aliceblue" />
         <div id="keys">
-          <button href="#" class="bg-secondary shadow-lg text-white">C</button>
-          <button href="#" class="bg-secondary text-white">-</button>
-          <button href="#" class="bg-secondary text-white">%</button>
-          <button href="#" class="bg-warning text-white">/</button>
-          <button href="#" class="bg-secondary text-white">7</button>
-          <button href="#" class="bg-secondary text-white">8</button>
-          <button href="#" class="bg-secondary text-white">9</button>
-          <button href="#" class="bg-warning text-white">X</button>
-          <button href="#" class="bg-secondary text-white">4</button>
-          <button href="#" class="bg-secondary text-white">5</button>
-          <button href="#" class="bg-secondary text-white">6</button>
-          <button href="#" class="bg-warning text-white">-</button>
-          <button href="#" class="bg-secondary text-white">1</button>
-          <button href="#" class="bg-secondary text-white">2</button>
-          <button href="#" class="bg-secondary text-white">3</button>
-          <button href="#" class="bg-warning text-white">+</button>
+          <button href="#" class="bg-secondary shadow-lg text-white" onclick="clearDisplay()">C</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('-')">-</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('%')">%</button>
+          <button href="#" class="bg-warning text-white" onclick="append('/')">/</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('7')">7</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('8')">8</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('9')">9</button>
+          <button href="#" class="bg-warning text-white" onclick="append('*')">X</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('4')">4</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('5')">5</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('6')">6</button>
+          <button href="#" class="bg-warning text-white" onclick="append('-')">-</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('1')">1</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('2')">2</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('3')">3</button>
+          <button href="#" class="bg-warning text-white" onclick="append('+')">+</button>
           <button href="#" class="bg-secondary text-white">
             <i class="fa-solid fa-calculator"></i>
           </button>
-          <button href="#" class="bg-secondary text-white">0</button>
-          <button href="#" class="bg-secondary text-white">,</button>
-          <button href="#" class="bg-warning text-white">=</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('0')">0</button>
+          <button href="#" class="bg-secondary text-white" onclick="append(',')">,</button>
+          <button href="#" class="bg-warning text-white" onclick="calculate()">=</button>
         </div>
         <hr style="color: aliceblue" />
-        <div id="author" class="text-white">Made by cppbender</div>
       </div>
     </section>
 
