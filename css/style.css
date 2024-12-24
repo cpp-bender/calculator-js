@@ -6,6 +6,7 @@
 
 #app {
   max-width: fit-content;
+  background-color: #1d2630;
 }
 
 #display h1 {
@@ -26,6 +27,14 @@
   border: 0 solid #fff;
   font-weight: 1000;
   font-size: 3rem;
+}
+
+#keys button:hover{
+  background-color: #3f3f3f !important;
+}
+
+#keys button:active{
+  background-color: gray !important;
 }
 
 #author {
