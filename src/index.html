@@ -16,12 +16,11 @@
   </head>
   <body>
     <section id="app" class="text-center rounded-4 mx-auto">
-      <div class="container my-4 d-flex flex-column">
-        <div id="display" class="text-end my-3 align-self-end">
+      <div class="container mt-4  pb-4 d-flex flex-column">
+        <div id="display" class="align-self-end">
           <h1 id="oldres" class="text-secondary"></h1>
           <h1 class="text-white">0</h1>
         </div>
-        <hr style="color: aliceblue" />
         <div id="keys">
           <button href="#" class="bg-secondary shadow-lg text-white" onclick="clearDisplay()">C</button>
           <button href="#" class="bg-secondary text-white" onclick="append('-')">-</button>
@@ -43,10 +42,9 @@
             <i class="fa-solid fa-calculator"></i>
           </button>
           <button href="#" class="bg-secondary text-white" onclick="append('0')">0</button>
-          <button href="#" class="bg-secondary text-white" onclick="append(',')">,</button>
+          <button href="#" class="bg-secondary text-white" onclick="append('.')">.</button>
           <button href="#" class="bg-warning text-white" onclick="calculate()">=</button>
         </div>
-        <hr style="color: aliceblue" />
       </div>
     </section>
 

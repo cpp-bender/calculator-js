@@ -1,14 +1,18 @@
-const display = document.querySelectorAll("h1")[1];
-const resDisplay = document.getElementById("oldres");
+let display = null;
+let resDisplay = null;
+let res;
 
-let res = "";
-let old = "";
+document.addEventListener("DOMContentLoaded", ()=>{
+    display =  document.querySelectorAll("h1")[1];
+    resDisplay =  document.getElementById("oldres");
+});
 
 function append(input) {
   if (display.innerHTML === null || display.innerHTML === '0') {
       res = "";
       display.innerHTML = "";
   }
+  resDisplay.style.display = "none";
   res += input;
   display.innerHTML += input;
 }
@@ -21,7 +25,6 @@ function calculate() {
 
 function clearDisplay() {
   res = "";
-  old = "";
   resDisplay.innerHTML = "";
-  display.innerHTML = res;
+  display.innerHTML = "0";
 }

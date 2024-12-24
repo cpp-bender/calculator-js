@@ -1,3 +1,8 @@
+:root {
+  --c-base: #1d2630;
+  --c-hover: #3f3f3f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 #app {
   max-width: fit-content;
-  background-color: #1d2630;
+  background-color: var(--c-base);
 }
 
 #display h1 {
@@ -20,13 +25,13 @@
 
 #keys {
   display: grid;
-  grid-template-columns: repeat(4, 9rem);
-  grid-template-rows: repeat(4, 9rem);
+  grid-template-columns: repeat(4, 8rem);
+  grid-template-rows: repeat(4, 8rem);
 }
 
 #keys button {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 4rem;
   border: 0 solid #fff;
   font-weight: 1000;
@@ -34,14 +39,9 @@
 }
 
 #keys button:hover{
-  background-color: #3f3f3f !important;
+  background-color: var(--c-hover) !important;
 }
 
 #keys button:active{
   background-color: gray !important;
-}
-
-#author {
-  text-align: right;
-  font-size: larger;
 }
